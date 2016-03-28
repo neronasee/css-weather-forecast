@@ -1,10 +1,3 @@
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
 *{transition: all .1s ease-in;}
 html {
 	height: 100%;
@@ -20,101 +13,84 @@ body {
 	border: 25px solid #2B81AC;
 }
 
-.wf-container {
+.ba-container {
 	max-width: 985px;
 	margin: 0 auto;
 	padding: 35px;
 }
 
-.wf-header h1{
+.ba-header h1{
 	font-weight: 600;
 	font-size: 1.3em;
 }
 
-.wf-cities {
+.ba-cities {
 	font-size: 0;
 	padding: 3px;
 	margin: 30px 0;
 	background-color: #FFF;
 }
-.wf-cities .wf-city {
+.ba-cities > li {
 	font-size: 22px;
 	display: inline-block;
 	text-align: center;
 	padding: 35px;
 	border: 3px solid #fff;
-	width: 25%; /* question about cascading */
 }
-.wf-cities:hover .wf-city:not(:hover) {
-	opacity: 0.7;
+.ba-city-lisbon {
+	background-color: #3399CC;
 }
-/* .wf-cities .wf-city:nth-child(2),
-.wf-cities .wf-city:nth-child(3),
-.wf-cities .wf-city:nth-child(4),
-.wf-cities .wf-city:nth-child(5),
-.wf-cities .wf-city:nth-child(6),
-.wf-cities .wf-city:nth-child(7),
-.wf-cities .wf-city:nth-child(8),
-.wf-cities .wf-city:nth-child(10) {
-	width: 25%;
-} */
-
-.wf-cities .wf-city:first-child,
-.wf-cities .wf-city:nth-child(9) {
-	width: 50%;
+.ba-city-paris {
+	background-color: #33CCCC;
 }
-.wf-cities .wf-city:last-child {
+.ba-city-belgrade {
+	background-color: #996699;
+}
+.ba-city-moscow {
+	background-color: #C24747;
+}
+.ba-city-tel-aviv {
+	background-color: #E2674A;
+}
+.ba-city-cair {
+	background-color: #FFCC66;
+}
+.ba-city-new-york {
+	background-color: #99CC99;
+}
+.ba-city-new-delhi {
+	background-color: #669999;
+}
+.ba-city-san-francisco {
+	background-color: #CC6699;
+}
+.ba-city-tokyo {
+	background-color: #339966;
+}
+.ba-city-sydney {
 	width: 100%;
 	background-color: #666699;
 }
-.wf-cities .wf-city:first-child {
-	background-color: #3399CC;
-}
-.wf-cities .wf-city:nth-child(2) {
-	background-color: #33CCCC;
-}
-.wf-cities .wf-city:nth-child(3) {
-	background-color: #996699;
-}
-.wf-cities .wf-city:nth-child(4) {
-	background-color: #C24747;
-}
-.wf-cities .wf-city:nth-child(5) {
-	background-color: #E2674A;
-}
-.wf-cities .wf-city:nth-child(6) {
-	background-color: #FFCC66;
-}
-.wf-cities .wf-city:nth-child(7) {
-	background-color: #99CC99;
-}
-.wf-cities .wf-city:nth-child(8) {
-	background-color: #669999;
-}
-.wf-cities .wf-city:nth-child(9) {
-	background-color: #CC6699;
-}
-.wf-cities .wf-city:nth-child(10) {
-	background-color: #339966;
+
+.ba-cities:hover > li:not(:hover) {
+	opacity: 0.7;
 }
 
-.wf-city .wf-city-name {
+.ba-city-name {
 	margin-bottom: 15px;
 }
 .wi,
-.wf-city .wf-temperature {
+.ba-temperature {
 	vertical-align: middle;
 }
-.wf-city .wf-temperature:after {
+.ba-temperature:after {
  	content:"°C";
 }
-.wf-temperature,
-.wf-temperature:after,
-.wf-city .wi {
+.ba-temperature,
+.ba-temperature:after,
+.ba-city .wi {
 	opacity: 0.7;
 }
-.wf-city .wi {
+.ba-city .wi {
 	font-size: 1.5em;
 }
-
-
